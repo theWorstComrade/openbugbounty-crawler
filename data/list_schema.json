@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "openbugbounty program list response schema",
+    "required": ["data", "draw", "recordsFiltered", "recordsTotal"],
+    "type": "object",
+    "properties": {
+        "data": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "array",
+                "minItems": 0
+            }
+        },
+        "draw": {
+            "type": "number"
+        },
+        "recordsFiltered": {
+            "type": "string"
+        },
+        "recordsTotal": {
+            "type": "string"
+        }
+    }
+}
